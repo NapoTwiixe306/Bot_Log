@@ -10,6 +10,7 @@ const Discord = require('discord.js'),
 
 client.login(process.env.TOKEN)
 client.commands = new Discord.Collection()
+client.db = require('./db.json')
 
 
 client.on("ready", () => {
